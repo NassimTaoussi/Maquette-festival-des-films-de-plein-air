@@ -1,0 +1,98 @@
+/* <----------> MEDIA QUERIES <----------> */
+
+@media (max-width: 800px)
+{
+
+
+    #navbar ul {
+        display: none;
+    }
+
+    #toggle {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: absolute;
+        inset: 0;
+    }
+
+    #toggle:checked ~ label:before {
+        content: "\f00d";
+    }
+    #toggle:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    #navbar label {
+        color: white;
+        font-size: 40px;
+        width: auto;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    ul .navItem:first-child {
+        margin-left: 0px;
+    }
+}
+
+/* <----------> END OF MEDIA QUERIES <----------> */
+
+html body {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ---------- MENU NAV ---------- */
+
+#navbar input {
+    display: none;
+}
+
+#navbar {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#navbar ul {
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.navItem {
+    margin-right: 15px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 14px;
+    display: inline;
+}
+
+.navItem:first-child {
+    margin-left: 20px;
+}
+
+.navItem:last-child {
+    margin-right: 20px;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: white;
+    opacity: 80%;
+    font-weight: bold;
+    text-align: center;
+}
