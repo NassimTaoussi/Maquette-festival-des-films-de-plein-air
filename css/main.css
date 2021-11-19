@@ -1,0 +1,480 @@
+/* <----------> MEDIA QUERIES <----------> */
+
+@media (min-width: 320px) and ( max-width: 550px) {
+
+    #backgroundContent h1 {
+        font-size: 45px;
+    }
+
+    #news #newsArticles .article {
+        width: 300px;
+        height: auto;
+    }
+
+    #contact #infoText p {
+        font-size: 18px;
+    }
+
+    #contact #infoText ul li {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    /* /// PROGRAMMATION \\\ */
+
+    #cards {
+        flex-wrap: wrap;
+    }
+
+    .cardMovie {
+        margin-top: 30px;
+    }
+
+    /* /// RESERVATION \\\ */
+    
+    #firstRow {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form #firstRow .inputGroup:first-child  {
+        margin-right: 0px;
+    }
+    
+    form #firstRow .inputGroup:last-child  {
+        margin-left: 0px;
+    }
+    
+    #secondRow {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form #secondRow .inputGroup:first-child  {
+        margin-right: 0px;
+    }
+    
+    form #secondRow .inputGroup:last-child  {
+        margin-left: 0px;
+    }
+
+    /* /// ACTUALITES \\\ */
+    #newsArticles {
+        flex-wrap: wrap;
+    }
+
+    .article:nth-child(2) {
+        margin-top: 200px;
+    }
+
+    .article:last-child {
+        margin-top: 200px;
+    }
+
+    /* /// INFORMATIONS \\\ */
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #infoText {
+        width: 100%;
+        text-align: center;
+    }
+
+    #infoMap {
+        width: 100%;
+        text-align: center;
+    }
+
+    #infoMap iframe {
+        height: 500px;
+        width: 90%;
+    }
+}
+    
+
+@media screen and (max-width: 1300px)
+{
+    
+    /* /// INFORMATIONS \\\ */
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #infoText {
+        width: 100%;
+        text-align: center;
+    }
+
+    #infoMap {
+        width: 100%;
+        text-align: center;
+    }
+
+    #infoMap iframe {
+        height: 500px;
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 1400px) {
+    
+     /* /// PROGRAMMATION \\\ */
+
+     #cards {
+        flex-wrap: wrap;
+    }
+
+    .cardMovie {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1520px) {
+    
+    /* /// ACTUALITES \\\ */
+    #newsArticles {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center
+    }
+
+    .article {
+        width: 800px;
+        height: auto;
+    }
+
+    .article:nth-child(2) {
+        margin-top: 200px;
+    }
+
+    .article:last-child {
+        margin-top: 200px;
+    }
+  
+}
+
+
+/* <----------> END OF MEDIA QUERIES <----------> */
+
+#main {
+    width: 100%;
+    height: auto;
+}
+
+.titleEntity {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+/* ---------- BACKGROUND ---------- */
+
+#backgroundContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    font-family: "Exo";
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#backgroundPicture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(80%);
+    position: absolute;
+}
+
+/* //////////////////// PROGRAMMATION \\\\\\\\\\\\\\\\\\\\ */
+
+#prog {
+    width: 100%;
+    height: auto;
+    background-color: #444444;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#prog .titleEntity {
+    color: white;
+}
+
+#cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ---------- CARD ---------- */
+
+.cardMovie {
+    width: 350px;
+    height: auto;
+    font-family: 'Roboto';
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pictureMovie {
+    width: 100%;
+    height: 50%;
+}
+
+.coverGrid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoMovie {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+}
+
+.infoMovie ul li {
+    list-style-type: none;
+}
+
+.infoMovie ul li span {
+    font-weight: bold;
+}
+
+.titleMovie {
+    text-align: center;
+    font-family: "Pangolin";
+}
+
+.dateMovie {
+    text-align: center;
+}
+
+.buttonReservation {
+   background-color: #6495ED;
+   border-radius: 30px;
+   width: 100px;
+   height: 40px;
+   color: white;
+   font-family: "Roboto";
+   font-weight: bold;
+   border: 0px;
+   display: block;
+   margin: auto;
+}
+
+/* //////////////////// RESERVATION \\\\\\\\\\\\\\\\\\\\ */
+
+/* ---------- FORM ---------- */
+
+#reservation {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#firstRow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#firstRow .inputGroup:first-child  {
+    margin-right: 15px;
+}
+
+#firstRow .inputGroup:last-child  {
+    margin-left: 15px;
+}
+
+#secondRow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#secondRow .inputGroup:first-child  {
+    margin-right: 15px;
+}
+
+#secondRow .inputGroup:last-child  {
+    margin-left: 15px;
+}
+
+#thirdRow {
+    width: 100%;
+    text-align: center;
+}
+
+
+label {
+    height: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+label p {
+    font-family: "Roboto";
+    font-size: 17px;
+}
+
+.formItem {
+    font-family: "Roboto";
+    font-size: 17px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    border: 0.7px solid black;
+}
+
+.formSelect {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 17px;
+    height: 30px;
+    width: 300px;
+    border: 0.7px solid black;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+form button {
+    font-family: "Roboto";
+    font-size: 17px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: 0px;
+    text-align: center;
+    background-color: #7CFC00;
+    color: black;
+    display: block;
+    margin: auto;
+}
+
+/* //////////////////// ACTUALITES \\\\\\\\\\\\\\\\\\\\ */
+
+#news {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #444444;
+}
+
+#news .titleEntity {
+    color: white;
+}
+
+#newsArticles {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.article {
+    width: 500px;
+    height: auto;
+}
+
+.imgArticle {
+    width: 100%;
+    height: auto;
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: grayscale(80%);
+}
+
+.infoArticle {
+    width: 100%;
+    height: 15%;
+    font-family: "Exo";
+    color: white;
+}
+
+.infoArticle .titleArticle {
+    padding-top: 2px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.infoArticle .descriptionArticle {
+    padding-top: 2px;
+    text-align: left;
+}
+
+/* //////////////////// INFORMATION \\\\\\\\\\\\\\\\\\\\ */
+
+#info {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+#contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#infoText {
+    width: 100%;
+}
+
+#infoText p {
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+#infoText ul {
+    padding-top: 15px;
+    padding-left: 0px;
+}
+
+#infoText ul li {
+    list-style-type: none;
+    margin-left: 0px;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+#infoMap {
+    width: 100%;
+}
